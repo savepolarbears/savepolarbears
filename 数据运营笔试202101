@@ -1,3 +1,5 @@
+某互联网物流数据运营岗笔试题目。两个sql+一道分析题。面试反馈：0运营经验，分析题答案是加分项。offer √
+
 1.EMPLOYEE表里包含着所有的员工信息，每个员工有自己的工号、姓名、薪水、和部门ID
 ID	Name	Salary	DepartmentID
 1	Joe	70000	1
