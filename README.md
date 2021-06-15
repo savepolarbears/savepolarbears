@@ -1,12 +1,13 @@
 Hey! It's the page where Stone record his events 2021.
+- I'm interested in Data Analytics area.
+- I'm currently learning python and review sql.
+- I'm going to rejoin my interrupted data related career and return to be a data analyst.
+- Expected location: Shanghai.
+- wstbetterworld@outlook.com
 
 
 
-- 👋 Hi, I’m @savepolarbears
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+
 
 <!---
 savepolarbears/savepolarbears is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
