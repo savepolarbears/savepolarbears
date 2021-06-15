@@ -1,0 +1,9 @@
+#笔记
+#爬网页数据+可视化
+
+import requests   # install requests
+url= 'http://sh.weather.com.cn/zhyj/index.shtml'
+
+
+resp = request.get(url)
+print(resp.text)   #打印响应体的内容--网页的源代码
