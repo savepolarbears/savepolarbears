@@ -1,9 +1,37 @@
 #笔记
 #爬网页数据+可视化
 
+#re xpath bs4 其中re的速度最快
+
 import requests   # install requests
 url= 'http://sh.weather.com.cn/zhyj/index.shtml'
 
 
 resp = request.get(url)
-print(resp.text)   #打印响应体的内容--网页的源代码
+print(resp.text)      #打印响应体的内容--返回文本形式的网页源代码
+print(resp.content)   #二进制形式返回网页
+print(resp.content.decode('utf-8'/'gbk')) 
+
+
+#或者导入beautifulsoup
+
+def get_data():
+
+  from bs4 import BeautifulSoup 
+  url= 'http://sh.weather.com.cn/zhyj/index.shtml'
+
+  resp = request.get(url)
+  html = resp.content.decode('gbk')   #html变量
+
+  #对html变量进行解析
+  soup = BeautifulSoup(html,'html.parser')  #beautifulsoup 自带 parser
+  print(soup)
+  tr_list = soup.find_all('tr')  #查询tr标签的所有内容 -列表
+  dates,conditions,temp=[],[],[] #赋值
+  for data in tr_list[1:]:       #插入切片器
+    sub_data = data.text.split()   #获取文字内容并去除空白内容
+    print(sub_data)
+    dates.append(sub_data[0])    #向列表追加内容
+    conditions.append( )
+  
+get_data()
